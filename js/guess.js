@@ -16,6 +16,10 @@ alert ('Hello');
 
 // Project 3
 
+
+//THis is a new comment
+
+
 // random value generated
 var y = Math.floor(Math.random() * 10 + 1);
 
