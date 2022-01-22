@@ -2,18 +2,18 @@ alert ('This is a game website');
 
 // Number guessing
 
-var y = Math.floor(Math.random() * 100 + 1);
+let y = Math.floor(Math.random() * 100 + 1);
 
-var guess = 1;
+let guess = 1;
 
 document.getElementById("submit_guess").onclick = function()
 {
 
-   var x = document.getElementById("guess_field").value;
+   let x = document.getElementById("guess_field").value;
 
    // Point system
    // starting score 
-   var score = 10; 
+   let score = 10;
 
    if(x == y)
       {
