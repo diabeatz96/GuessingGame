@@ -5,6 +5,9 @@ alert ('This is a game website');
 let y = Math.floor(Math.random() * 100 + 1);
 let guess = 1;
 let score = 10;
+document.getElementById("score").innerHTML = `Type a number to get started`;
+
+
 
 document.getElementById("submit_guess").onclick = function()
 {
@@ -27,16 +30,14 @@ document.getElementById("submit_guess").onclick = function()
    else if(x > y)
       {
          guess++;
-         alert("Not a winner! Choose a smaller number!");
          score -= 1;
-         document.getElementById("score").innerHTML = score;
+         document.getElementById("score").innerHTML = `Not a winner! Choose a smaller number! Score:${score}`;
       }
    else if (x < y)
       {
          guess++;
-         alert("Not a winner! Choose a greater number!");
          score -= 1;
-         document.getElementById("score").innerHTML = score;
+         document.getElementById("score").innerHTML = `Not a winner! Choose a greater number! Score:${score}`;
       }
 }
 
