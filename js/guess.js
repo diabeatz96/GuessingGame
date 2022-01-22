@@ -1,5 +1,5 @@
 // This is a game
-alert ('Hello');
+// alert ('Hello');
 
 
 // const some_array = [1, 'John', 2, 'Peter', true, false];
@@ -19,8 +19,9 @@ alert ('Hello');
 
 //This is a new comment;
 
+alert ('This is a game website');
 
-var y = Math.floor(Math.random() * 10 + 1);
+var y = Math.floor(Math.random() * 100 + 1);
 
 var guess = 1;
 
