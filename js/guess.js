@@ -3,8 +3,8 @@ alert ('This is a game website');
 // Number guessing
 
 let y = Math.floor(Math.random() * 100 + 1);
-
 let guess = 1;
+let score = 10;
 
 document.getElementById("submit_guess").onclick = function()
 {
@@ -13,7 +13,11 @@ document.getElementById("submit_guess").onclick = function()
 
    // Point system
    // starting score 
-   let score = 10;
+
+   if (score == 0)
+   {
+      alert("You are at 0 health points!")
+   }
 
    if(x == y)
       {
@@ -24,17 +28,15 @@ document.getElementById("submit_guess").onclick = function()
       {
          guess++;
          alert("Not a winner! Choose a smaller number!");
-         document.getElementById("score").innerHTML = score - 1;
+         score -= 1;
+         document.getElementById("score").innerHTML = score;
       }
    else if (x < y)
       {
          guess++;
          alert("Not a winner! Choose a greater number!");
-         document.getElementById("score").innerHTML = score - 1;
+         score -= 1;
+         document.getElementById("score").innerHTML = score;
       }
 }
 
-if (score == 0)
-{
-   alert("You lost! Try again")
-}
