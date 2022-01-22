@@ -20,31 +20,26 @@ alert ('Hello');
 //THis is a new comment
 
 
-// random value generated
 var y = Math.floor(Math.random() * 10 + 1);
 
-// counting the number of guesses
-// made for correct Guess
 var guess = 1;
 
-document.getElementById("submitguess").onclick = function(){
+document.getElementById("submit_guess").onclick = function(){
 
-// number guessed by user
-var x = document.getElementById("guessField").value;
+var x = document.getElementById("guess_field").value;
 
 if(x == y)
 {
-   alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
-           + guess + " GUESS ");
+   alert("Great! You guessed the number right in "
+           + guess + " guess! ");
 }
-else if(x > y) /* if guessed number is greater
-               than actual number*/
+else if(x > y)
 {
    guess++;
-   alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+   alert("Not a winner! Choose a smaller number!");
 }
 else
 {
    guess++;
-   alert("OOPS SORRY!! TRY A GREATER NUMBER")
+   alert("Not a winner! Choose a greater number!")
 }
