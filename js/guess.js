@@ -44,7 +44,6 @@ document.querySelector("#changebg").onclick = function() {
       }
          currentBackground++;
          document.querySelector("body").style.backgroundImage = `url('${backgroundArray[currentBackground]}')`;
-         currentBackground++;
 }
 
 
